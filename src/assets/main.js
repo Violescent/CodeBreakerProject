@@ -56,7 +56,9 @@ function setMessage (message) {
 function showAnswer(success) {
   document.getElementById('code');
   if(success) {
-    code.className += 
+    code.className += ' success';
+  } else {
+    
   }
 }
 
