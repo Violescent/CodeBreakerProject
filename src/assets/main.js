@@ -11,6 +11,12 @@ if(!validateInput(input.value)) {
   return;
   }
   attempt.value++;
+
+  if(getResults(input.value)) {
+    setMessage('You Win! :)');
+  } else if (attempt.value >= 10) {
+    setMessage('You Lose! :(');
+  });
 }
 
 function getResults(input) {
@@ -30,7 +36,7 @@ function getResults(input) {
   if(input == answer.value) {
     return true;
   }
-    return false; 
+    return false;
 }
 
 function setHiddenFields () {
