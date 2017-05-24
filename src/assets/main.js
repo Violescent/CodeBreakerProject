@@ -16,7 +16,9 @@ if(!validateInput(input.value)) {
     setMessage('You Win! :)');
   } else if (attempt.value >= 10) {
     setMessage('You Lose! :(');
-  });
+  } else {
+    setMessage('Incorrect, try again.');
+  }
 }
 
 function getResults(input) {
@@ -49,6 +51,13 @@ function setHiddenFields () {
 
 function setMessage (message) {
   document.getElementById('message').innerHTML = message;
+}
+
+function showAnswer(success) {
+  document.getElementById('code');
+  if(success) {
+    code.className += 
+  }
 }
 
 function validateInput(input) {
