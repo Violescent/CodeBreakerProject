@@ -1,3 +1,4 @@
+"use strict"
 let answer = document.getElementById('answer');
 let attempt = document.getElementById('attempt');
 
